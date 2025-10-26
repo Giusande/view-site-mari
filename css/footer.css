@@ -40,6 +40,10 @@ footer p {
   color: #f6fafd;
 }
 
+footer p span{
+    font-weight: 600;
+}
+
 @media (max-width: 1000px) {
   .footer-imagem-links {
     flex-direction: column-reverse;
