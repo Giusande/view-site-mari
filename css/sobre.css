@@ -1,0 +1,84 @@
+.sobre-mim-section {
+  background: #1a3d63;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  gap: 30px;
+  color: #f6fafd;
+  box-shadow: 0 0 50px #000;
+  border-radius: 25px;
+}
+
+.sobre-mim-section img {
+  max-width: 612px;
+}
+
+.sobre-mim-section .texto-sobre {
+  max-width: 700px;
+}
+
+.sobre-mim-section .texto-sobre h1 {
+  margin-bottom: 20px;
+}
+
+.sobre-mim-section .texto-sobre p {
+  margin-bottom: 20px;
+}
+
+.sobre-mim-section .texto-sobre button {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #4a7fa7, #1a3d63);
+  color: #f6fafd;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (max-width: 1260px) {
+  .sobre-mim-section{
+    padding: 30px;
+    gap: 50px;
+  }
+
+  .sobre-mim-section .texto-sobre p{
+    font-size: 14px;
+    max-width: 500px;
+  }
+
+  .sobre-mim-section img {
+    max-width: 400px;
+    background: #4a7fa7;
+    border-radius: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre-mim-section {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .sobre-mim-section img {
+    background: #4a7fa7;
+    border-radius: 100%;
+    width: 90%;
+  }
+
+  .sobre-mim-section .texto-sobre {
+    text-align: center;
+  }
+
+  .sobre-mim-section .texto-sobre p {
+    font-size: 14px;
+    text-align: justify;
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+}
