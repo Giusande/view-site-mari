@@ -66,6 +66,8 @@
   width: auto;
   border-radius: 12px;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 @media (max-width: 1350px) {
