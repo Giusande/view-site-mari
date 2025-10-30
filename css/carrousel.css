@@ -70,3 +70,10 @@
     .dot.active {
       background: #fff;
     }
+
+    @media (max-width: 600px) {
+      .carousel button{
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }

@@ -68,6 +68,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 1350px) {
+  .eventos-section .eventos-div .eventos-card{
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 924px) {
   .eventos-section .eventos-div {
     width: 100%;
