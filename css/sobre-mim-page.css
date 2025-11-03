@@ -1,0 +1,110 @@
+.sobre-mim-section-page {
+  width: 100%;
+  padding: 100px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-mim-section-page .sobre-mim-div {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-mim-section-page .sobre-mim-div .texto-sobre-mim h1,
+.sobre-mim-section-page .sobre-mim-div .texto-sobre-mim p,
+.gallery {
+  margin: 30px 0;
+}
+
+.sobre-mim-section-page .texto-sobre-mim .videos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.sobre-mim-section-page .sobre-mim-div .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.sobre-mim-section-page .sobre-mim-div .gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mim-section-page .sobre-mim-div .gallery .gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .sobre-mim-section-page {
+    padding: 100px 20px;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div {
+    max-width: 600px;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-mim-section-page {
+    padding: 80px 20px;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim h1 {
+    font-size: 2rem;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-mim-section-page {
+    padding: 60px 15px;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim h1 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+}

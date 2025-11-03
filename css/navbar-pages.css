@@ -1,0 +1,11 @@
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  box-shadow: 0 0 30px #000;
+}
+
+.navbar .nav-links {
+    border-radius: 0 0 15px 15px;
+  }
