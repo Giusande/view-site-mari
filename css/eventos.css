@@ -2,6 +2,10 @@
   padding: 80px 20px;
 }
 
+.eventos-page {
+  margin-top: 50px;
+}
+
 .eventos-section .title {
   font-size: 38px;
   color: #0a1931;

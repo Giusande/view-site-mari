@@ -1,0 +1,275 @@
+.eventos-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0 0 0;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.eventos-page h1 {
+  margin-bottom: 30px;
+}
+
+.eventos-page .texto-evento {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.eventos-page .texto-evento p {
+  text-align: justify;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.eventos-page .texto-evento button {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #0a1931, #1a3d63);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+  width: 150px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 8px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.divs {
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.divs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nvi1 {
+  grid-row: span 4 / span 4;
+}
+
+.nvi2 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+.nvi3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+
+.nvi4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.nvi5 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.anos1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+}
+
+.anos2 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.anos3 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.anos4 {
+  grid-row: span 7 / span 7;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.anos5 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.anos6 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 5;
+}
+
+.nva1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+}
+
+.nva2 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.nva3 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.nva4 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.nva5 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.nva6 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-row-start: 4;
+}
+
+.cs1 {
+  grid-row: span 4 / span 4;
+}
+
+.cs2 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.cs3 {
+  grid-row: span 7 / span 7;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.cs4 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+.cs5 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.cs6 {
+  grid-row: span 7 / span 7;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.div30 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+}
+
+.div31 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.div32 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.div34 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.div35 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+
+.div36 {
+  grid-row: span 7 / span 7;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.div37 {
+  grid-row: span 7 / span 7;
+}
+
+.div38 {
+  grid-row: span 7 / span 7;
+}
+
+.div39 {
+  grid-row: span 7 / span 7;
+}
+
+.div40 {
+  grid-row: span 7 / span 7;
+}
+
+@media (max-width: 1000px) {
+  .eventos-page {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .eventos-page h1 {
+    font-size: 22px;
+  }
+
+  .eventos-page .texto-evento p {
+    font-size: 12px;
+  }
+
+  .eventos-page .texto-evento {
+    margin: 20px auto;
+  }
+}

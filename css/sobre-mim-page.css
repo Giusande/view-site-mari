@@ -1,43 +1,109 @@
-.sobre-mim-section-page {
+.sobre-mim-section {
+  padding: 150px 30px;
   width: 100%;
-  padding: 100px 30px;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.sobre-mim-section-page .sobre-mim-div {
+.sobre-mim-section .card-div {
   width: 100%;
   max-width: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.sobre-mim-section-page .sobre-mim-div .texto-sobre-mim h1,
-.sobre-mim-section-page .sobre-mim-div .texto-sobre-mim p,
-.gallery {
-  margin: 30px 0;
-}
-
-.sobre-mim-section-page .texto-sobre-mim .videos{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  text-align: center;
   justify-content: center;
+  gap: 60px;
 }
 
-.sobre-mim-section-page .sobre-mim-div .gallery {
+.sobre-mim-section .card-div .card {
+  width: 100%;
+  background: #f6fafd;
+  border: 1px solid #1a3d63;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-mim-section .card-div .card .foto-perfil-nina {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+}
+
+.sobre-mim-section .card-div .card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sobre-mim-section .card-div .card .card-text {
+  width: 60%;
+}
+
+.sobre-mim-section .card-div .card .card-text h2 {
+  margin-bottom: 10px;
+}
+
+.sobre-mim-section .card-div .card .card-text p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.sobre-mim-section .card-div .card .card-text .rds {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.sobre-mim-section .card-div .card .card-text a {
+  text-decoration: none;
+  color: #f6fafd;
+  background-color: #1a3d63;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.sobre-mim-section .card-div .card .card-text a i {
+  font-size: 20px;
+}
+
+.sobre-mim-section .card-div .text-card-div {
+  width: 100%;
+  max-width: 650px;
+  text-align: justify;
+  height: 100%;
+  font-size: 14px;
+}
+
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 14px;
   max-width: 1000px;
   width: 100%;
+  margin: 20px 0;
 }
 
-.sobre-mim-section-page .sobre-mim-div .gallery .gallery-item {
+.gallery .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -45,7 +111,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
-.sobre-mim-section-page .sobre-mim-div .gallery .gallery-item img {
+.gallery .gallery-item img {
   position: absolute;
   top: 0;
   left: 0;
@@ -60,51 +126,41 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 1024px) {
-  .sobre-mim-section-page {
-    padding: 100px 20px;
-  }
-
-  .sobre-mim-section-page .sobre-mim-div {
-    max-width: 600px;
-  }
-
-  .sobre-mim-section-page .sobre-mim-div .gallery {
+@media (max-width: 1000px) {
+  .gallery {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .sobre-mim-section {
+    padding: 120px 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .sobre-mim-section-page {
-    padding: 80px 20px;
-  }
-
-  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim h1 {
-    font-size: 2rem;
-  }
-
-  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .sobre-mim-section-page .sobre-mim-div .gallery {
+  .gallery {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 10px;
   }
 }
 
-@media (max-width: 480px) {
-  .sobre-mim-section-page {
-    padding: 60px 15px;
+@media (max-width: 667px) {
+  .sobre-mim-section .card-div .card {
+    flex-direction: column;
+    width: 300px;
   }
 
-  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim h1 {
-    font-size: 1.6rem;
+  .sobre-mim-section .card-div .card .card-text {
+    width: 100%;
+    text-align: center;
   }
 
-  .sobre-mim-section-page .sobre-mim-div .texto-sobre-mim p {
-    font-size: 0.8rem;
-    text-align: justify;
+  .sobre-mim-section .card-div .card .card-text .rds {
+    justify-content: center;
+  }
+}
+
+@media (height > 700px) {
+  .sobre-mim-section {
+    min-height: auto;
   }
 }

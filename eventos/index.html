@@ -8,20 +8,26 @@
       href="https://i.postimg.cc/kXkzRLxM/IMG-5249.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/config.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/landing-page.css" />
-    <link rel="stylesheet" href="./css/eventos.css" />
-    <link rel="stylesheet" href="./css/sobre.css" />
-    <link rel="stylesheet" href="./css/carrousel.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="../css/config.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/navbar-pages.css" />
+    <link rel="stylesheet" href="../css/eventos.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Nina StoryMaker</title>
+    <link
+      href="https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.3/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <title>Eventos - Nina StoryMaker</title>
   </head>
   <body>
     <header class="navbar">
@@ -32,17 +38,19 @@
       />
       <nav id="nav-links" class="nav-links">
         <ul class="nav-list">
-          <li class="nav-link nav-li-inicio ativo"><a href="./">Início</a></li>
+          <li class="nav-link nav-li-inicio"><a href="../">Início</a></li>
           <li class="nav-link nav-li-sobre">
-            <a href="./sobre-mim">Sobre Mim</a>
+            <a href="../sobre-mim/">Sobre Mim</a>
           </li>
-          <li class="nav-link nav-li-eventos">
-            <a href="./eventos/">Eventos</a>
+          <li class="nav-link nav-li-eventos ativo">
+            <a href="./">Eventos</a>
           </li>
           <li class="nav-link nav-li-avaliacoes"><a href="#">Avaliações</a></li>
         </ul>
       </nav>
-      <button id="contato">Contrate-me</button>
+      <button id="contato" onclick="window.location.href = '../'">
+        Contrate-me
+      </button>
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
@@ -50,24 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="landing-page-section">
-        <img
-          src="https://i.postimg.cc/cJ5bZj44/nina-foto-um.png"
-          alt="Nina StoryMaker"
-          class="landing-page-image"
-        />
-        <div class="landing-page-content">
-          <h1 class="landing-page-title">Nina Storymaker</h1>
-          <p class="landing-page-description">
-            Transformando momentos únicos em histórias inesquecíveis, capturando
-            emoções reais e eternizando lembranças através da arte da fotografia
-            e do StoryMaker.
-          </p>
-          <button id="saiba-mais">Saiba Mais</button>
-          <div class="rds-scs"></div>
-        </div>
-      </section>
-      <section class="eventos-section">
+      <section class="eventos-section eventos-page">
         <h2 class="title">Eventos</h2>
         <p class="subtitle">
           Especializada em capturar os momentos mais preciosos da vida, desde
@@ -86,7 +77,12 @@
               detalhe, emoção e momento especial com um toque criativo e
               moderno. Transformamos celebrações em memórias visuais.
             </p>
-            <button class="button-eventos">Veja Mais!</button>
+            <button
+              class="button-eventos"
+              onclick="window.location.href = './aniversario-infantil/'"
+            >
+              Veja Mais!
+            </button>
           </div>
           <div class="eventos-card">
             <img src="https://i.postimg.cc/xdg65Zbd/IMG-4486.jpg" alt="foto" />
@@ -96,7 +92,12 @@
               e um olhar atento a cada detalhe. Transformamos o grande dia em
               uma narrativa visual inesquecível — elegante, emotiva e autêntica.
             </p>
-            <button class="button-eventos">Veja Mais!</button>
+            <button
+              class="button-eventos"
+              onclick="window.location.href = './casamento/'"
+            >
+              Veja Mais!
+            </button>
           </div>
           <div class="eventos-card">
             <img src="https://i.postimg.cc/zfpx7QRB/IMG-4441.jpg" alt="foto" />
@@ -106,7 +107,12 @@
               produção refinada e cheia de sentimento. Cada olhar, gesto e
               sorriso transformado em lembranças eternas.
             </p>
-            <button class="button-eventos">Veja Mais!</button>
+            <button
+              class="button-eventos"
+              onclick="window.location.href = './noivado/'"
+            >
+              Veja Mais!
+            </button>
           </div>
           <div class="eventos-card">
             <img src="https://i.postimg.cc/5tpsgrF2/IMG-3824.jpg" alt="foto" />
@@ -117,7 +123,12 @@
               a essência do casal e contar sua história de forma única e
               encantadora.
             </p>
-            <button class="button-eventos">Veja Mais!</button>
+            <button
+              class="button-eventos"
+              onclick="window.location.href = './pre-wedding/'"
+            >
+              Veja Mais!
+            </button>
           </div>
           <div class="eventos-card">
             <img src="https://i.postimg.cc/Xvn2wWXV/IMG-0572.jpg" alt="foto" />
@@ -128,7 +139,12 @@
               com criatividade e sensibilidade, transformando sonhos em
               lembranças inesquecíveis.
             </p>
-            <button class="button-eventos">Veja Mais!</button>
+            <button
+              class="button-eventos"
+              onclick="window.location.href = './15anos/'"
+            >
+              Veja Mais!
+            </button>
           </div>
           <div class="eventos-card">
             <img src="https://i.postimg.cc/hGM2sY7J/IMG-7933.jpg" alt="foto" />
@@ -139,53 +155,15 @@
               criatividade, transformando a alegria da infância em lembranças
               eternas.
             </p>
-            <button class="button-eventos">Veja Mais!</button>
+            <button
+              class="button-eventos"
+              onclick="window.location.href = './aniversario-adulto'"
+            >
+              Veja Mais!
+            </button>
           </div>
         </div>
       </section>
-      <section class="sobre-mim-section">
-        <img
-          src="https://i.postimg.cc/25XKmJ8j/nina-foto-tres.png"
-          alt="foto-nina"
-        />
-        <div class="texto-sobre">
-          <h1>Sobre Mim</h1>
-          <p>
-            Sou estudante de Publicidade e Propaganda da UNICAP, criadora de
-            conteúdo nas redes sociais, e apaixonada por capturar momentos e
-            realizar sonhos! Com meu celular, câmera e claro, uma dose generosa
-            de criatividade, transformo cenas em vídeos que ficam na memória
-            (sua e do seu celular). Estou sempre em busca de eternizar, em fotos
-            e vídeos, aqueles momentos que fazem o coração bater mais forte!
-          </p>
-          <button>Me conheça melhor!</button>
-        </div>
-      </section>
-      <section class=""></section>
-      <div class="carousel">
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <img src="https://i.postimg.cc/8kbL6vMz/1.jpg" alt="Imagem 1" />
-          </div>
-          <div class="carousel-slide">
-            <img src="https://i.postimg.cc/tRzFx6Ws/2.jpg" alt="Imagem 2" />
-          </div>
-          <div class="carousel-slide">
-            <img src="https://i.postimg.cc/FFx0LS37/3.jpg" alt="Imagem 3" />
-          </div>
-          <div class="carousel-slide">
-            <img src="https://i.postimg.cc/05C7wSD6/4.jpg" alt="Imagem 4" />
-          </div>
-          <div class="carousel-slide">
-            <img src="https://i.postimg.cc/jqhy7fP6/14.jpg" alt="Imagem 5" />
-          </div>
-        </div>
-
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
-
-        <div class="dots"></div>
-      </div>
     </main>
     <footer>
       <div class="footer-imagem-links">
@@ -216,7 +194,6 @@
         &copy; 2025 Nina Storymaker. Todos os direitos reservados.
       </p>
     </footer>
-    <script src="./js/mobile.js"></script>
-    <script src="./js/carrousel.js"></script>
+    <script src="../js/mobile.js"></script>
   </body>
 </html>
