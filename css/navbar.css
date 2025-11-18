@@ -112,11 +112,11 @@
   .navbar {
     justify-content: space-between;
     padding: 0 30px;
-    height: 60px;
+    height: 80px;
   }
 
   .navbar .logo{
-    height: 70%;
+    height: 90%;
   }
 
   .navbar .nav-links {
