@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 .sobre-mim-section .card-div .card {
@@ -88,10 +88,14 @@
 
 .sobre-mim-section .card-div .text-card-div {
   width: 100%;
-  max-width: 650px;
+  max-width: 700px;
   text-align: justify;
   height: 100%;
   font-size: 14px;
+  border: 1px solid #1a3d63;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
 }
 
 .gallery {
@@ -146,7 +150,8 @@
 @media (max-width: 667px) {
   .sobre-mim-section .card-div .card {
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
+    padding: 30px 15px;
   }
 
   .sobre-mim-section .card-div .card .card-text {

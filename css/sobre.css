@@ -25,6 +25,7 @@
 
 .sobre-mim-section .texto-sobre p {
   margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .sobre-mim-section .texto-sobre button {
@@ -48,7 +49,7 @@
   }
 
   .sobre-mim-section .texto-sobre p{
-    font-size: 14px;
+    font-size: 12px;
     max-width: 500px;
   }
 
