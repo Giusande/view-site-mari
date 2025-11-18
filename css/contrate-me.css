@@ -1,0 +1,246 @@
+.orcamento-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 160px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.orcamento-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #1a3d63, #4c8bd9, #1a3d63);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+.orcamento-content h2,
+.orcamento-content h3 {
+  color: #1a3d63;
+  text-align: center;
+  margin: 18px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.orcamento-content form label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 18px;
+  color: #1a3d63;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.orcamento-content form input,
+.orcamento-content form select,
+.orcamento-content form textarea {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(26, 61, 99, 0.3);
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  color: #1a3d63;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.orcamento-content form input:focus,
+.orcamento-content form select:focus,
+.orcamento-content form textarea:focus {
+  border-color: #4c8bd9;
+  box-shadow: 0 0 10px rgba(76, 139, 217, 0.4);
+}
+
+.orcamento-content button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  transition: 0.25s;
+  background: linear-gradient(135deg, #1a3d63, #4c8bd9);
+  position: relative;
+  z-index: 2;
+}
+
+.orcamento-content button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.orcamento-content .btn-voltar {
+  background: rgba(26, 61, 99, 0.15);
+  border: 1px solid rgba(26, 61, 99, 0.3);
+  color: #1a3d63;
+}
+
+.orcamento-content .btn-voltar:hover {
+  background: rgba(26, 61, 99, 0.25);
+}
+
+.orcamento-content .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.orcamento-content .checkbox-group label {
+  color: #1a3d63;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.orcamento-content .checkbox-group label input {
+  width: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 28px;
+  border-radius: 20px;
+  border: 2px solid rgba(26, 61, 99, 0.2);
+  animation: fadeIn 0.4s;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.7s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+
+  .orcamento-content {
+    padding: 25px 20px;
+    margin: 130px auto;
+    border-radius: 18px;
+  }
+
+  .orcamento-content h2 {
+    font-size: 24px;
+  }
+
+  .orcamento-content h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  form label {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .modal-content {
+    padding: 22px;
+  }
+
+  .modal-content h3 {
+    font-size: 18px;
+  }
+
+  /* Checkbox mais espaçado no mobile */
+  .checkbox-group label {
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices - celulares muito pequenos */
+@media (max-width: 480px) {
+
+  .orcamento-content {
+    padding: 20px 15px;
+  }
+
+  .orcamento-content h2 {
+    font-size: 22px;
+  }
+
+  .orcamento-content h3 {
+    font-size: 18px;
+  }
+
+  form label {
+    font-size: 13px;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    padding: 9px;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 11px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .modal-content {
+    padding: 18px;
+  }
+}

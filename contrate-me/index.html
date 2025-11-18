@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://i.postimg.cc/kXkzRLxM/IMG-5249.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/config.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/navbar-pages.css" />
+    <link rel="stylesheet" href="../css/contrate-me.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.3/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <title>Contrate-me - Nina StoryMaker</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="https://i.postimg.cc/mDX6Lnbm/logo-nina-sem-fundo.png"
+        alt="logo"
+        class="logo"
+      />
+      <nav id="nav-links" class="nav-links">
+        <ul class="nav-list">
+          <li class="nav-link nav-li-inicio"><a href="../">Início</a></li>
+          <li class="nav-link nav-li-sobre">
+            <a href="../sobre-mim/">Sobre Mim</a>
+          </li>
+          <li class="nav-link nav-li-eventos">
+            <a href="../eventos/">Eventos</a>
+          </li>
+          <li class="nav-link nav-li-avaliacoes ativo">
+            <a href="./">Avaliações</a>
+          </li>
+        </ul>
+        <button id="contato" onclick="window.location.href = './'">
+          Contrate-me
+        </button>
+      </nav>
+      <button id="contato" onclick="window.location.href = './'">
+        Contrate-me
+      </button>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <div class="orcamento-content">
+        <h2>Solicitação de Serviço</h2>
+
+        <!-- Etapa 1: Informações do Evento -->
+        <form id="formEvento">
+          <label>Qual serviço você deseja contratar?</label>
+          <select id="tipoServico" required>
+            <option value="">Selecione...</option>
+            <option value="Storymaker">Storymaker</option>
+            <option value="Fotografia">Fotografia</option>
+          </select>
+
+          <!-- Campos Storymaker -->
+          <div id="storymakerCampos" class="hidden">
+            <h3>Informações do Evento</h3>
+
+            <label>Local do evento:</label>
+            <input
+              type="text"
+              id="localEvento"
+              placeholder="Ex: Buffet Jardim das Flores"
+            />
+
+            <label>Data do evento:</label>
+            <input type="date" id="dataEvento" />
+
+            <label>Horário de início:</label>
+            <input type="time" id="inicioEvento" />
+
+            <label>Horário de término:</label>
+            <input type="time" id="fimEvento" />
+
+            <label>Tipo de evento:</label>
+            <input
+              type="text"
+              id="tipoEventoStory"
+              placeholder="Ex: Casamento, Aniversário..."
+            />
+          </div>
+
+          <!-- Campos Fotografia -->
+          <div id="fotoCampos" class="hidden">
+            <h3>Informações do Ensaio</h3>
+
+            <label>Tipo de ensaio:</label>
+            <select id="tipoEnsaio">
+              <option value="">Selecione...</option>
+              <option value="Pré-Wedding">Pré-Wedding</option>
+              <option value="Aniversário">Aniversário</option>
+              <option value="Corporativo">Corporativo</option>
+              <option value="Eventos">Eventos</option>
+            </select>
+
+            <label>O ensaio será:</label>
+            <select id="localEnsaio">
+              <option value="">Selecione...</option>
+              <option value="Externo">Externo</option>
+              <option value="Estúdio">Em estúdio</option>
+            </select>
+
+            <div id="localExternoCampo" class="hidden">
+              <label>Local externo:</label>
+              <input
+                type="text"
+                id="ondeExterno"
+                placeholder="Ex: Parque Ibirapuera, Praia..."
+              />
+            </div>
+
+            <label>Será necessário levar objetos extras?</label>
+            <select id="objetosExtras">
+              <option value="Não">Não</option>
+              <option value="Sim">Sim</option>
+            </select>
+
+            <div id="listaObjetos" class="hidden">
+              <div class="checkbox-group">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="objeto"
+                    value="Balão de gás hélio"
+                  />
+                  Balão de gás hélio</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="objeto"
+                    value="Balão de número"
+                  />
+                  Balão de número</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="objeto"
+                    value="Bolo por conta do cliente"
+                  />
+                  Bolo por conta do cliente</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <button type="button" id="continuarBtn">Continuar</button>
+        </form>
+
+        <!-- Etapa 2: Informações Pessoais -->
+        <form id="formPessoal" class="hidden">
+          <h3>Informações para Contato</h3>
+
+          <label>Nome completo:</label>
+          <input
+            placeholder="Ex.: Marina Bento"
+            type="text"
+            id="nome"
+            required
+          />
+
+          <label>E-mail:</label>
+          <input
+            placeholder="Ex.: seuemail@exemplo.com"
+            type="email"
+            id="email"
+            required
+          />
+
+          <label>Telefone:</label>
+          <input
+            type="tel"
+            id="telefone"
+            placeholder="(DDD) 9 9999-9999"
+            required
+          />
+
+          <label>Observações adicionais:</label>
+          <textarea id="adicionais" rows="3"></textarea>
+
+          <button type="button" class="btn-voltar" id="voltarBtn">
+            Voltar
+          </button>
+          <button type="submit">Enviar Solicitação</button>
+        </form>
+
+        <!-- Modal (Pré-visualização da mensagem) -->
+        <div id="previewModal" class="modal">
+          <div class="modal-content">
+            <h3>Pré-visualização da mensagem:</h3>
+            <pre id="mensagemPreview"></pre>
+            <div class="modal-buttons">
+              <button id="cancelarBtn">Voltar</button>
+              <button id="confirmarBtn">Enviar via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/contrate-me.js"></script>
+    <script src="../js/mobile.js"></script>
+  </body>
+</html>
