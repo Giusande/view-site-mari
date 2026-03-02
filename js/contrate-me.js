@@ -1,34 +1,35 @@
+// Elementos principais
 const tipoServico = document.getElementById("tipoServico");
 const storymakerCampos = document.getElementById("storymakerCampos");
-const fotoCampos = document.getElementById("fotoCampos");
-const localEnsaio = document.getElementById("localEnsaio");
-const localExternoCampo = document.getElementById("localExternoCampo");
-const objetosExtras = document.getElementById("objetosExtras");
-const listaObjetos = document.getElementById("listaObjetos");
 const formEvento = document.getElementById("formEvento");
 const formPessoal = document.getElementById("formPessoal");
 const continuarBtn = document.getElementById("continuarBtn");
 const voltarBtn = document.getElementById("voltarBtn");
 
-tipoServico.addEventListener("change", () => {
-  storymakerCampos.classList.add("hidden");
-  fotoCampos.classList.add("hidden");
-  if (tipoServico.value === "Storymaker")
-    storymakerCampos.classList.remove("hidden");
-  if (tipoServico.value === "Fotografia") fotoCampos.classList.remove("hidden");
-});
+// Campos Storymaker
+const localEvento = document.getElementById("localEvento");
+const dataEvento = document.getElementById("dataEvento");
+const inicioEvento = document.getElementById("inicioEvento");
+const fimEvento = document.getElementById("fimEvento");
+const tipoEventoStory = document.getElementById("tipoEventoStory");
 
-localEnsaio.addEventListener("change", () => {
-  localExternoCampo.classList.toggle("hidden", localEnsaio.value !== "Externo");
-});
+// Campos pessoais
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const telefone = document.getElementById("telefone");
+const adicionais = document.getElementById("adicionais");
 
-objetosExtras.addEventListener("change", () => {
-  listaObjetos.classList.toggle("hidden", objetosExtras.value !== "Sim");
-});
+// Modal
+const modal = document.getElementById("previewModal");
+const mensagemPreview = document.getElementById("mensagemPreview");
+const cancelarBtn = document.getElementById("cancelarBtn");
+const confirmarBtn = document.getElementById("confirmarBtn");
 
+// Sempre mostrar os campos de Storymaker
+storymakerCampos.classList.remove("hidden");
+
+// Etapas
 continuarBtn.addEventListener("click", () => {
-  if (!tipoServico.value)
-    return alert("Selecione o tipo de serviço antes de continuar.");
   formEvento.classList.add("hidden");
   formPessoal.classList.remove("hidden");
 });
@@ -38,44 +39,36 @@ voltarBtn.addEventListener("click", () => {
   formEvento.classList.remove("hidden");
 });
 
-// Modal Preview
-const modal = document.getElementById("previewModal");
-const mensagemPreview = document.getElementById("mensagemPreview");
-const cancelarBtn = document.getElementById("cancelarBtn");
-const confirmarBtn = document.getElementById("confirmarBtn");
+// Fechar modal
+cancelarBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
 
-cancelarBtn.addEventListener("click", () => (modal.style.display = "none"));
-
+// Envio
 formPessoal.addEventListener("submit", (e) => {
   e.preventDefault();
-  const numeroWhatsApp = "5581991979286"; // seu número aqui
 
-  let mensagem = `📝 *Nova Solicitação de Serviço*%0A`;
-  mensagem += `Serviço: ${tipoServico.value}%0A%0A`;
+  const numeroWhatsApp = "5581991979286";
 
-  if (tipoServico.value === "Storymaker") {
-    mensagem += `📍 Local: ${localEvento.value}%0A📅 Data: ${dataEvento.value}%0A🕒 Início: ${inicioEvento.value}%0A🕓 Fim: ${fimEvento.value}%0A🎉 Tipo de evento: ${tipoEventoStory.value}%0A`;
-  } else {
-    mensagem += `📸 Tipo de ensaio: ${tipoEnsaio.value}%0A🏠 Local: ${localEnsaio.value}%0A`;
-    if (localEnsaio.value === "Externo")
-      mensagem += `📍 Local externo: ${ondeExterno.value}%0A`;
-    mensagem += `🎁 Objetos extras: ${objetosExtras.value}%0A`;
-    if (objetosExtras.value === "Sim") {
-      const objetos = Array.from(
-        document.querySelectorAll('input[name="objeto"]:checked')
-      ).map((o) => o.value);
-      mensagem += `Itens: ${objetos.join(", ")}%0A`;
-    }
-  }
+  let mensagem = `📝 *Nova Solicitação de Storymaker*%0A%0A`;
+
+  mensagem += `📍 Local: ${localEvento.value}%0A`;
+  mensagem += `📅 Data: ${dataEvento.value}%0A`;
+  mensagem += `🕒 Início: ${inicioEvento.value}%0A`;
+  mensagem += `🕓 Fim: ${fimEvento.value}%0A`;
+  mensagem += `🎉 Tipo de evento: ${tipoEventoStory.value}%0A`;
 
   mensagem += `%0A👤 *Informações Pessoais*%0A`;
-  mensagem += `Nome: ${nome.value}%0A📧 E-mail: ${email.value}%0A📞 Telefone: ${
-    telefone.value
-  }%0A💬 Observações: ${adicionais.value || "Nenhuma"}%0A`;
+  mensagem += `Nome: ${nome.value}%0A`;
+  mensagem += `📧 E-mail: ${email.value}%0A`;
+  mensagem += `📞 Telefone: ${telefone.value}%0A`;
+  mensagem += `💬 Observações: ${adicionais.value || "Nenhuma"}%0A`;
 
+  // Preview
   mensagemPreview.textContent = decodeURIComponent(
     mensagem.replace(/%0A/g, "\n")
   );
+
   modal.style.display = "flex";
 
   confirmarBtn.onclick = () => {

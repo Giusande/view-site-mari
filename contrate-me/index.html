@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,8 +45,8 @@
           <li class="nav-link nav-li-eventos">
             <a href="../eventos/">Eventos</a>
           </li>
-          <li class="nav-link nav-li-avaliacoes ativo">
-            <a href="./">Avaliações</a>
+          <li class="nav-link nav-li-avaliacoes">
+            <a href="../feedback/">Avaliações</a>
           </li>
         </ul>
         <button id="contato" onclick="window.location.href = './'">
@@ -72,7 +72,6 @@
           <select id="tipoServico" required>
             <option value="">Selecione...</option>
             <option value="Storymaker">Storymaker</option>
-            <option value="Fotografia">Fotografia</option>
           </select>
 
           <!-- Campos Storymaker -->
@@ -102,72 +101,6 @@
               placeholder="Ex: Casamento, Aniversário..."
             />
           </div>
-
-          <!-- Campos Fotografia -->
-          <div id="fotoCampos" class="hidden">
-            <h3>Informações do Ensaio</h3>
-
-            <label>Tipo de ensaio:</label>
-            <select id="tipoEnsaio">
-              <option value="">Selecione...</option>
-              <option value="Pré-Wedding">Pré-Wedding</option>
-              <option value="Aniversário">Aniversário</option>
-              <option value="Corporativo">Corporativo</option>
-              <option value="Eventos">Eventos</option>
-            </select>
-
-            <label>O ensaio será:</label>
-            <select id="localEnsaio">
-              <option value="">Selecione...</option>
-              <option value="Externo">Externo</option>
-              <option value="Estúdio">Em estúdio</option>
-            </select>
-
-            <div id="localExternoCampo" class="hidden">
-              <label>Local externo:</label>
-              <input
-                type="text"
-                id="ondeExterno"
-                placeholder="Ex: Parque Ibirapuera, Praia..."
-              />
-            </div>
-
-            <label>Será necessário levar objetos extras?</label>
-            <select id="objetosExtras">
-              <option value="Não">Não</option>
-              <option value="Sim">Sim</option>
-            </select>
-
-            <div id="listaObjetos" class="hidden">
-              <div class="checkbox-group">
-                <label
-                  ><input
-                    type="checkbox"
-                    name="objeto"
-                    value="Balão de gás hélio"
-                  />
-                  Balão de gás hélio</label
-                >
-                <label
-                  ><input
-                    type="checkbox"
-                    name="objeto"
-                    value="Balão de número"
-                  />
-                  Balão de número</label
-                >
-                <label
-                  ><input
-                    type="checkbox"
-                    name="objeto"
-                    value="Bolo por conta do cliente"
-                  />
-                  Bolo por conta do cliente</label
-                >
-              </div>
-            </div>
-          </div>
-
           <button type="button" id="continuarBtn">Continuar</button>
         </form>
 
@@ -202,7 +135,7 @@
           <label>Observações adicionais:</label>
           <textarea id="adicionais" rows="3"></textarea>
 
-          <button type="button" class="btn-voltar" id="voltarBtn">
+          <button type="button" class="btn-voltar-c" id="voltarBtn">
             Voltar
           </button>
           <button type="submit">Enviar Solicitação</button>
