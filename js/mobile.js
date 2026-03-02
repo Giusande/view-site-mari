@@ -6,8 +6,6 @@ menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("open");
 });
 
-let logo = document.querySelector(".logo");
-
 function voltarPagina() {
   if (history.length > 1) {
     history.back();
@@ -15,3 +13,9 @@ function voltarPagina() {
     window.location.href = "./";
   }
 }
+
+let logo = document.querySelector(".logo");
+
+logo.addEventListener("click", () => {
+  window.location.href = "http://127.0.0.1:5500/";
+});

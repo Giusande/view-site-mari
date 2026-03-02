@@ -48,7 +48,7 @@ cancelarBtn.addEventListener("click", () => {
 formPessoal.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const numeroWhatsApp = "5581991979286";
+  const numeroWhatsApp = "5581981013497";
 
   let mensagem = `📝 *Nova Solicitação de Storymaker*%0A%0A`;
 
