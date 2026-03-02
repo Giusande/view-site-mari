@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,11 @@
       href="https://i.postimg.cc/kXkzRLxM/IMG-5249.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../css/config.css" />
-    <link rel="stylesheet" href="../../css/navbar.css" />
-    <link rel="stylesheet" href="../../css/navbar-pages.css" />
-    <link rel="stylesheet" href="../../css/eventos-page.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../../css/config.css" />
+    <link rel="stylesheet" href="../../../css/navbar.css" />
+    <link rel="stylesheet" href="../../../css/navbar-pages.css" />
+    <link rel="stylesheet" href="../../../css/eventos-page.css" />
+    <link rel="stylesheet" href="../../../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,23 +40,26 @@
         <ul class="nav-list">
           <li class="nav-link nav-li-inicio"><a href="../../">Início</a></li>
           <li class="nav-link nav-li-sobre">
-            <a href="../../sobre-mim/">Sobre Mim</a>
+            <a href="../../../sobre-mim/">Sobre Mim</a>
           </li>
           <li class="nav-link nav-li-eventos ativo">
-            <a href="../">Eventos</a>
+            <a href="../../">Eventos</a>
           </li>
           <li class="nav-link nav-li-avaliacoes">
-            <a href="../../feedback/">Avaliações</a>
+            <a href="../../../feedback/">Avaliações</a>
           </li>
         </ul>
         <button
           id="contato"
-          onclick="window.location.href = '../../contrate-me'"
+          onclick="window.location.href = '../../../contrate-me'"
         >
           Contrate-me
         </button>
       </nav>
-      <button id="contato" onclick="window.location.href = '../../contrate-me'">
+      <button
+        id="contato"
+        onclick="window.location.href = '../../../contrate-me'"
+      >
         Contrate-me
       </button>
       <div class="menu-toggle" id="menu-toggle">
@@ -65,9 +68,15 @@
         <span></span>
       </div>
     </header>
+    <button class="btn-voltar" onclick="voltarPagina()">Voltar</button>
     <main>
       <section class="eventos-page 15anos">
         <h1>Festa de 15 anos</h1>
+        <p>
+          Um momento único e cheio de significado. A cobertura em real time
+          acompanha cada detalhe, emoção e conexão, registrando essa fase tão
+          especial de forma sensível e autêntica.
+        </p>
         <div class="parent">
           <div class="anos1 divs">
             <img
@@ -106,31 +115,23 @@
             />
           </div>
         </div>
+        <section class="videos-section">
+          <div class="blue-band"></div>
+          <div class="videos-container">
+            <div class="iphone-frame">
+              <iframe
+                src="https://drive.google.com/file/d/19E3EIBINSNEOaWh8CyCWEoAno6Hq_lxI/preview"
+                allow="autoplay"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
         <div class="texto-evento">
-          <p>
-            Registramos festas de 15 anos como esta, onde cada instante se torna
-            parte de uma história única. Do brilho das luzes ao encanto do
-            vestido, nada passa despercebido. Nossa missão é eternizar sorrisos
-            sinceros e olhares emocionados. Acompanhamos cada passo, cada dança,
-            cada abraço cheio de significado. Captamos os pequenos detalhes que
-            fazem toda a diferença. O carinho da família, os amigos vibrando, a
-            felicidade radiante da debutante. Com sensibilidade, transformamos
-            momentos simples em lembranças valiosas. Cada clique é pensado com
-            cuidado e criatividade. Queremos que, ao rever as fotos, você sinta
-            tudo de novo. A emoção de entrar no salão, o brilho dos olhos, o
-            coração acelerado. A celebração de uma fase que se despede e outra
-            que começa. Porque 15 anos é mais do que uma festa, é um marco na
-            vida. É sobre sonhos, descobertas e novos caminhos. E nós estamos
-            ali para guardar cada fragmento dessa história. Do making of ao
-            último passo na pista de dança. Nada se perde, tudo se transforma em
-            memória viva. Nosso objetivo é contar sua história com verdade e
-            beleza. Para que esse dia permaneça para sempre em seu coração. E
-            que as fotos sejam a ponte para reviver cada emoção. Porque momentos
-            especiais merecem ser eternizados.
-          </p>
           <button
             id="contato"
-            onclick="window.location.href = '../../contrate-me'"
+            onclick="window.location.href = '../../../contrate-me'"
           >
             Contratar
           </button>
@@ -166,6 +167,6 @@
         &copy; 2025 Nina Storymaker. Todos os direitos reservados.
       </p>
     </footer>
-    <script src="../../js/mobile.js"></script>
+    <script src="../../../js/mobile.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,11 @@
       href="https://i.postimg.cc/kXkzRLxM/IMG-5249.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../css/config.css" />
-    <link rel="stylesheet" href="../../css/navbar.css" />
-    <link rel="stylesheet" href="../../css/navbar-pages.css" />
-    <link rel="stylesheet" href="../../css/eventos-page.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../../css/config.css" />
+    <link rel="stylesheet" href="../../../css/navbar.css" />
+    <link rel="stylesheet" href="../../../css/navbar-pages.css" />
+    <link rel="stylesheet" href="../../../css/eventos-page.css" />
+    <link rel="stylesheet" href="../../../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,23 +40,26 @@
         <ul class="nav-list">
           <li class="nav-link nav-li-inicio"><a href="../../">Início</a></li>
           <li class="nav-link nav-li-sobre">
-            <a href="../../sobre-mim/">Sobre Mim</a>
+            <a href="../../../sobre-mim/">Sobre Mim</a>
           </li>
           <li class="nav-link nav-li-eventos ativo">
-            <a href="../">Eventos</a>
+            <a href="../../">Eventos</a>
           </li>
           <li class="nav-link nav-li-avaliacoes">
-            <a href="../../feedback/">Avaliações</a>
+            <a href="../../../feedback/">Avaliações</a>
           </li>
         </ul>
         <button
           id="contato"
-          onclick="window.location.href = '../../contrate-me'"
+          onclick="window.location.href = '../../../contrate-me'"
         >
           Contrate-me
         </button>
       </nav>
-      <button id="contato" onclick="window.location.href = '../../contrate-me'">
+      <button
+        id="contato"
+        onclick="window.location.href = '../../../contrate-me'"
+      >
         Contrate-me
       </button>
       <div class="menu-toggle" id="menu-toggle">
@@ -65,9 +68,15 @@
         <span></span>
       </div>
     </header>
+    <button class="btn-voltar" onclick="voltarPagina()">Voltar</button>
     <main>
       <section class="eventos-page pw">
         <h1>Pré Wedding</h1>
+        <p class="text-evento">
+          Um momento para registrar a essência do casal antes do grande dia. A
+          cobertura em real time capta conexões, gestos e emoções de forma leve
+          e natural, transformando a experiência em memórias espontâneas.
+        </p>
         <div class="parent">
           <div class="div37 divs">
             <img src="https://i.postimg.cc/25ZMd7tr/IMG-3823.jpg" alt="pw" />
@@ -83,33 +92,9 @@
           </div>
         </div>
         <div class="texto-evento">
-          <p>
-            Cobrimos noivados com um olhar atento aos detalhes e à essência do
-            momento. Nosso trabalho busca registrar não apenas imagens, mas
-            sentimentos reais. Cada toque das mãos, cada troca de olhares, cada
-            sorriso tímido merece ser lembrado. Acreditamos que o amor se
-            expressa nos gestos simples e nas emoções espontâneas. Por isso,
-            nossa proposta é criar uma atmosfera leve e confortável durante o
-            ensaio. Queremos que vocês se sintam à vontade para serem vocês
-            mesmos. Nada forçado, nada artificial, apenas verdade e
-            sensibilidade. Cada fotografia é pensada para eternizar essa fase
-            tão especial da história do casal. Um momento que marca o início de
-            um novo capítulo. Nosso foco é transformar esse dia em memórias que
-            possam ser revividas a cada olhar. As cores, a luz e o ambiente são
-            escolhidos para trazer elegância e harmonia às imagens. A produção é
-            refinada, mas preserva o que há de mais humano: o amor. Assim,
-            criamos registros que falam por si, sem exageros ou artifícios.
-            Momentos espontâneos, naturais e cheios de emoção. Queremos que
-            vocês se enxerguem nas fotos e sintam novamente o que viveram
-            naquele dia. Que cada imagem seja um retorno ao brilho nos olhos. Ao
-            calor das mãos entrelaçadas. Ao sorriso que nasce sem perceber.
-            Nosso compromisso é eternizar sensações, não apenas fotografias.
-            Porque o amor merece ser lembrado com beleza, sensibilidade e
-            verdade.
-          </p>
           <button
             id="contato"
-            onclick="window.location.href = '../../contrate-me'"
+            onclick="window.location.href = '../../../contrate-me'"
           >
             Contratar
           </button>
@@ -145,6 +130,6 @@
         &copy; 2025 Nina Storymaker. Todos os direitos reservados.
       </p>
     </footer>
-    <script src="../../js/mobile.js"></script>
+    <script src="../../../js/mobile.js"></script>
   </body>
 </html>

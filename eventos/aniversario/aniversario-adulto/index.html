@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,11 @@
       href="https://i.postimg.cc/kXkzRLxM/IMG-5249.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../css/config.css" />
-    <link rel="stylesheet" href="../../css/navbar.css" />
-    <link rel="stylesheet" href="../../css/navbar-pages.css" />
-    <link rel="stylesheet" href="../../css/eventos-page.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../../css/config.css" />
+    <link rel="stylesheet" href="../../../css/navbar.css" />
+    <link rel="stylesheet" href="../../../css/navbar-pages.css" />
+    <link rel="stylesheet" href="../../../css/eventos-page.css" />
+    <link rel="stylesheet" href="../../../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,23 +40,26 @@
         <ul class="nav-list">
           <li class="nav-link nav-li-inicio"><a href="../../">Início</a></li>
           <li class="nav-link nav-li-sobre">
-            <a href="../../sobre-mim/">Sobre Mim</a>
+            <a href="../../../sobre-mim/">Sobre Mim</a>
           </li>
           <li class="nav-link nav-li-eventos ativo">
-            <a href="../">Eventos</a>
+            <a href="../../">Eventos</a>
           </li>
           <li class="nav-link nav-li-avaliacoes">
-            <a href="../../feedback/">Avaliações</a>
+            <a href="../../../feedback/">Avaliações</a>
           </li>
         </ul>
         <button
           id="contato"
-          onclick="window.location.href = '../../contrate-me'"
+          onclick="window.location.href = '../../../contrate-me'"
         >
           Contrate-me
         </button>
       </nav>
-      <button id="contato" onclick="window.location.href = '../../contrate-me'">
+      <button
+        id="contato"
+        onclick="window.location.href = '../../../contrate-me'"
+      >
         Contrate-me
       </button>
       <div class="menu-toggle" id="menu-toggle">
@@ -65,9 +68,15 @@
         <span></span>
       </div>
     </header>
+    <button class="btn-voltar" onclick="voltarPagina()">Voltar</button>
     <main>
       <section class="eventos-page nv-adulto">
         <h1>Aniversário Adulto</h1>
+        <p class="text-evento">
+          Celebrações marcadas por encontros, histórias e emoções verdadeiras. A
+          cobertura em real time registra momentos vividos no agora, com leveza
+          e atenção aos detalhes que fazem a festa ser especial.
+        </p>
         <div class="parent">
           <div class="nva1 divs">
             <img
@@ -107,37 +116,9 @@
           </div>
         </div>
         <div class="texto-evento">
-          <p>
-            Cobrimos celebrações infantis cheias de fantasia, amor e muita
-            diversão! Cada festa é única, e nós estamos ali para registrar cada
-            detalhe que faz esse momento tão especial. Desde o brilho nos olhos
-            ao ver o tema escolhido, até os pequenos gestos de carinho entre
-            família e amigos. Fotografamos a espontaneidade, as risadas, as
-            brincadeiras e toda a energia que só as crianças têm. Nosso olhar é
-            sensível e atento, buscando imagens que contem histórias verdadeiras
-            e emocionantes. Trabalhamos com leveza, deixando tudo fluir de forma
-            natural, sem poses engessadas ou desconfortos. Queremos que as
-            crianças sejam livres para brincar, criar, correr e viver o momento
-            — e nós seguimos acompanhando. Os detalhes da decoração, o bolo, os
-            brinquedos e os momentos de surpresa ganham vida nas imagens. Cada
-            cena é capturada com cuidado, para que você possa reviver tudo
-            sempre que desejar. Nosso objetivo é transformar esse dia especial
-            em lembranças que aquecem o coração. Sabemos que a infância passa
-            rápido, por isso valorizamos cada instante. Amamos registrar o
-            brilho do primeiro parabéns, o abraço apertado dos pais e aquele
-            sorriso sincero. Nada é mais lindo do que a pureza e a alegria que
-            transbordam nesses momentos. E é exatamente isso que buscamos
-            eternizar: o encanto de ser criança. Seja uma festa pequena ou uma
-            grande comemoração, tratamos cada registro com dedicação. Nosso
-            trabalho é feito com amor, sensibilidade e muita criatividade.
-            Queremos que cada foto conte um pedacinho da história do seu
-            pequeno. E que, no futuro, ele possa olhar e sentir novamente tudo o
-            que viveu. Fazemos mais do que fotografar festas — guardamos
-            memórias. Porque esses instantes merecem ser lembrados para sempre.
-          </p>
           <button
             id="contato"
-            onclick="window.location.href = '../../contrate-me'"
+            onclick="window.location.href = '../../../contrate-me'"
           >
             Contratar
           </button>
@@ -173,6 +154,6 @@
         &copy; 2025 Nina Storymaker. Todos os direitos reservados.
       </p>
     </footer>
-    <script src="../../js/mobile.js"></script>
+    <script src="../../../js/mobile.js"></script>
   </body>
 </html>

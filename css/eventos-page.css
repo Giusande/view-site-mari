@@ -10,10 +10,11 @@
   margin-bottom: 30px;
 }
 
-.eventos-page .texto-evento {
+.eventos-page .text-evento {
   width: 90%;
-  max-width: 700px;
-  margin: 50px auto;
+  max-width: 1000px;
+  font-size: 13px;
+  margin: 0 auto;
 }
 
 .eventos-page .texto-evento p {
@@ -22,7 +23,7 @@
   margin-bottom: 40px;
 }
 
-.eventos-page .texto-evento button {
+.eventos-page #contato {
   padding: 12px 30px;
   background: linear-gradient(135deg, #0a1931, #1a3d63);
   color: #fff;
@@ -45,7 +46,7 @@
   width: 90%;
   max-width: 700px;
   max-height: 400px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .divs {
@@ -257,6 +258,7 @@
 @media (max-width: 1000px) {
   .eventos-page {
     padding: 0;
+    margin: 130px auto;
   }
 }
 
@@ -271,5 +273,83 @@
 
   .eventos-page .texto-evento {
     margin: 20px auto;
+  }
+}
+
+.videos-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.blue-band {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background-color: #0a1931;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.videos-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  z-index: 2;
+  flex-wrap: nowrap;
+}
+
+.iphone-frame {
+  position: relative;
+  width: 260px;
+  height: 520px;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.iphone-frame::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 80px;
+  height: 20px;
+  background: #000;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.iphone-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 28px;
+}
+
+@media (max-width: 800px) {
+  .videos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .videos-section {
+    margin: 50px 0;
+  }
+
+  .blue-band {
+    top: 0;
+    left: 50%;
+    width: 220px;
+    height: 100%;
+    transform: translateX(-50%);
   }
 }

@@ -53,6 +53,7 @@
 
 .landing-page-section .landing-page-image {
   height: 100%;
+  filter: drop-shadow(5px -5px 10px rgb(0, 0, 0));
 }
 
 @media (width > 1800px) {

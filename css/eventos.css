@@ -39,7 +39,7 @@
   overflow: hidden;
   text-align: center;
   background-color: #fff;
-  max-width: 360px;
+  max-width: 340px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
