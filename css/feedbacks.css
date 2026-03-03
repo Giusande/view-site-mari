@@ -1,56 +1,67 @@
+.feedback-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 120px auto 0 auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.feedback-intro h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.feedback-intro p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 10px;
+}
+
 .feedback-section {
-  width: 90%;
-  margin: auto;
-  margin-top: 120px;
-  margin-bottom: 50px;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
-  gap: 20px;
+  column-count: auto;
+  column-width: 320px; /* largura base fluida */
+  column-gap: 20px; /* NUNCA mais que 20px */
+  padding: 60px 20px;
+  background: #fafafa;
 }
 
 .feedback-card {
-  background: #fff;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 20px; /* controla espaço vertical */
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  break-inside: avoid;
+  transition: 0.3s ease;
+  align-items: center;
+  justify-content: center;
 }
 
-.feedback-card input {
-  display: none;
+.feedback-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.feedback-card img {
+  width: 80px;
+}
+
+.feedback-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
 }
 
 .feedback-text {
   font-size: 14px;
-  color: #333;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  padding-right: 25px;
-}
-
-.feedback-card input:checked ~ .feedback-text {
-  -webkit-line-clamp: unset;
-}
-
-.toggle {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
+  line-height: 1.6;
   color: #555;
-  user-select: none;
-}
-
-.feedback-card input:checked + label.toggle::after {
-  content: "−";
-}
-
-.feedback-card input:not(:checked) + label.toggle::after {
-  content: "+";
 }

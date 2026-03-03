@@ -181,3 +181,19 @@
   grid-row: span 5 / span 5;
   grid-column-start: 5;
 }
+
+@media (max-width: 600px) {
+  .foto-perfil-nina {
+    width: 90%;
+  }
+
+  .foto-perfil-nina img {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .card-text,
+  .text-card-div {
+    text-align: center;
+  }
+}
