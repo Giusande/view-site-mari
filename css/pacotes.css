@@ -1,0 +1,81 @@
+.pacotes {
+  padding: 80px 10%;
+  background: #f4f6f8;
+}
+
+.pacotes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TITULO */
+
+.pacotes-texto h2 {
+  font-size: 56px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.pacotes-texto p {
+  color: #5b6b7a;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* SERVIÇOS */
+
+.pacotes-servicos h3 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #34495e;
+}
+
+.lista-servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.lista-servicos span {
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 2px solid #34495e;
+  font-size: 14px;
+  text-align: center;
+  color: #34495e;
+  transition: 0.3s;
+}
+
+.lista-servicos span.ativo {
+  background: #4a6fa5;
+  color: white;
+  border: none;
+}
+
+/* HOVER */
+
+.lista-servicos span:hover {
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .pacotes-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .lista-servicos {
+    grid-template-columns: 1fr;
+  }
+
+  .pacotes-texto h2 {
+    font-size: 40px;
+  }
+}

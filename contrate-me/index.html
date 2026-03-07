@@ -71,9 +71,9 @@
           <label>Qual serviço você deseja contratar?</label>
           <select id="tipoServico" required>
             <option value="">Selecione...</option>
-            <option value="Storymaker">Storymaker</option>
+            <option value="Storymaker">Storymaker Real Time</option>
+            <option value="Captacao">Captação de conteúdo</option>
           </select>
-
           <!-- Campos Storymaker -->
           <div id="storymakerCampos" class="hidden">
             <h3>Informações do Evento</h3>
@@ -100,6 +100,23 @@
               id="tipoEventoStory"
               placeholder="Ex: Casamento, Aniversário..."
             />
+          </div>
+          <div id="captacaoCampos" class="hidden">
+            <h3>Informações da Captação</h3>
+
+            <label>Quantidade de vídeos desejados:</label>
+            <input
+              type="number"
+              id="quantidadeVideos"
+              placeholder="Ex: 5 vídeos"
+            />
+
+            <label>O que você precisa?</label>
+            <textarea
+              id="descricaoCaptacao"
+              rows="3"
+              placeholder="Ex: vídeos para redes sociais, anúncios, produtos..."
+            ></textarea>
           </div>
           <button type="button" id="continuarBtn">Continuar</button>
         </form>
