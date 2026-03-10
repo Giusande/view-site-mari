@@ -1,12 +1,11 @@
 .navbar {
-  background: #4a7fa7;
-  backdrop-filter: blur(5px);
-  filter: blur(0px);
+  background: rgba(74, 127, 167, 0.75);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 15px;
-  box-shadow: 0 4px 30px #000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   width: 90%;
   height: 80px;
   position: absolute;
@@ -16,7 +15,7 @@
 }
 
 .navbar .logo {
-  height: 80%;
+  height: 70%;
   cursor: pointer;
 }
 

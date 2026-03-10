@@ -31,54 +31,69 @@
         alt="logo"
         class="logo"
       />
+
       <nav id="nav-links" class="nav-links">
         <ul class="nav-list">
-          <li class="nav-link nav-li-inicio ativo"><a href="./">Início</a></li>
-          <li class="nav-link nav-li-sobre">
-            <a href="./sobre-mim">Sobre Mim</a>
-          </li>
-          <li class="nav-link nav-li-eventos">
-            <a href="./eventos/">Eventos</a>
-          </li>
-          <li class="nav-link nav-li-avaliacoes">
-            <a href="./feedback/">Avaliações</a>
-          </li>
+          <li class="nav-link ativo"><a href="./">Início</a></li>
+          <li class="nav-link"><a href="./sobre-mim">Sobre Mim</a></li>
+          <li class="nav-link"><a href="./eventos/">Eventos</a></li>
+          <li class="nav-link"><a href="./feedback/">Avaliações</a></li>
         </ul>
-        <button id="contato" onclick="window.location.href = './contrate-me'">
+
+        <button onclick="window.location.href = './contrate-me'">
           Contrate-me
         </button>
       </nav>
-      <button id="contato" onclick="window.location.href = './contrate-me'">
+
+      <button
+        class="desktop-cta"
+        onclick="window.location.href = './contrate-me'"
+      >
         Contrate-me
       </button>
+
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </header>
+
     <main>
       <section class="landing-page-section">
-        <img
-          src="https://i.postimg.cc/brhJxDmQ/marib2-png.png"
-          alt="Nina StoryMaker"
-          class="landing-page-image"
-        />
         <div class="landing-page-content">
           <h1 class="landing-page-title">Nina Storymaker</h1>
+
+          <h2 class="landing-page-subtitle">
+            Histórias reais contadas em tempo real
+          </h2>
+
           <p class="landing-page-description">
-            Transformo momentos reais em memórias autênticas. Storymaker,
-            fotógrafa e criadora de narrativas em tempo real. Cada evento é uma
-            história única, e meu olhar traduz emoção, presença e verdade em
-            cada registro. Casamentos, noivados, aniversários e eventos sociais
-            em todo o Brasil.
+            Transformo momentos em memórias autênticas. Especializada em eventos
+            sociais e corporativos, registro cada detalhe com sensibilidade,
+            criando narrativas visuais que eternizam emoções.
           </p>
-          <a
-            id="saiba-mais"
-            href="https://www.canva.com/design/DAG_RSRA3GY/8VPOVCrqCSZYa8LdDBsqmw/view?utm_content=DAG_RSRA3GY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h86e8923c54"
-            >Saiba Mais</a
-          >
-          <div class="rds-scs"></div>
+
+          <div class="landing-buttons">
+            <a
+              class="cta-primary"
+              href="https://www.canva.com/design/DAG_RSRA3GY/8VPOVCrqCSZYa8LdDBsqmw/view"
+            >
+              Ver Portfólio
+            </a>
+
+            <a class="cta-secondary" href="./contrate-me">
+              Solicitar orçamento
+            </a>
+          </div>
+        </div>
+
+        <div class="landing-image-container">
+          <img
+            src="https://i.postimg.cc/brhJxDmQ/marib2-png.png"
+            alt="Nina StoryMaker"
+            class="landing-page-image"
+          />
         </div>
       </section>
       <section class="eventos-section">
