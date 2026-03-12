@@ -40,7 +40,14 @@
   text-align: center;
   background-color: #fff;
   max-width: 340px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.eventos-section .eventos-div .eventos-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 .eventos-section .eventos-div .eventos-card img {
@@ -79,7 +86,7 @@
 }
 
 @media (max-width: 1350px) {
-  .eventos-section .eventos-div .eventos-card{
+  .eventos-section .eventos-div .eventos-card {
     max-width: 300px;
   }
 }
