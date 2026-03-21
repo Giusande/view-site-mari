@@ -1,11 +1,10 @@
 .landing-page-section {
   width: 100%;
-  min-height: 100vh;
+  max-height: 940px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 140px 100px 0 100px;
-
   background: radial-gradient(circle at 20% 20%, #295a8a, #132c47 60%, #0a1931);
 }
 
@@ -39,6 +38,7 @@
 .landing-buttons {
   display: flex;
   gap: 20px;
+  text-align: center;
 }
 
 .cta-primary {
@@ -77,16 +77,6 @@
   justify-content: center;
 }
 
-.landing-image-container::before {
-  content: "";
-  position: absolute;
-  width: 450px;
-  height: 450px;
-  background: radial-gradient(circle, #4c8bd980, transparent 70%);
-  filter: blur(80px);
-  z-index: 0;
-}
-
 .landing-page-image {
   position: relative;
   z-index: 2;
@@ -95,12 +85,17 @@
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
 }
 
+.landing-page-image-mobile {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .landing-page-section {
     flex-direction: column-reverse;
     text-align: center;
     padding: 140px 30px 60px 30px;
     gap: 40px;
+    max-height: 2000px;
   }
 
   .landing-page-content {
@@ -118,9 +113,19 @@
     text-align: center;
   }
 
+  .landing-image-container {
+    top: 50px;
+    margin-bottom: 50px;
+  }
+
   .landing-page-image {
+    display: none;
+  }
+
+  .landing-page-image-mobile {
+    display: block;
     height: auto;
-    width: 80%;
+    width: 90%;
   }
 
   .nav-links {
@@ -138,5 +143,19 @@
     width: 25px;
     height: 3px;
     background: white;
+  }
+}
+
+@media (max-width: 460px) {
+  .landing-page-title {
+    font-size: 47px;
+  }
+
+  .landing-page-subtitle {
+    font-size: 16px;
+  }
+
+  .landing-page-description {
+    font-size: 14px;
   }
 }

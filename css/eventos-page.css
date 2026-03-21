@@ -275,7 +275,6 @@
     margin: 20px auto;
   }
 }
-
 .videos-section {
   position: relative;
   width: 100%;
@@ -305,8 +304,8 @@
 
 .iphone-frame {
   position: relative;
-  width: 260px;
-  height: 520px;
+  width: 320px;
+  height: 590px;
   background-color: #000;
   border-radius: 40px;
   padding: 12px;
@@ -319,10 +318,10 @@
   position: absolute;
   top: 22px;
   left: 50%;
-  width: 80px;
-  height: 20px;
+  width: 100px;
+  height: 25px;
   background: #000;
-  border-radius: 10px;
+  border-radius: 15px;
   transform: translateX(-50%);
   z-index: 3;
 }
